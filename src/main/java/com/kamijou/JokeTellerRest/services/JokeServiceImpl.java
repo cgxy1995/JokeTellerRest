@@ -1,15 +1,14 @@
 package com.kamijou.JokeTellerRest.services;
 
+import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 /**
  * Created by njiang on 2/9/2018.
  */
 @Service
-public class JokeServiceImpl implements JokeService {
+public class JokeServiceImpl extends ChuckNorrisQuotes implements JokeService{
     public String tellRandomJoke() {
-        RestTemplate restTemplate = new RestTemplate();
-        return "This is a random Joke";
+        return getRandomQuote();
     }
 }
