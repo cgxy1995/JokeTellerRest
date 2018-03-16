@@ -11,6 +11,8 @@ public class JokeTellerRestApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		String a = "aa";
+		System.out.println(a.equals(null));
 	}
 
 }
